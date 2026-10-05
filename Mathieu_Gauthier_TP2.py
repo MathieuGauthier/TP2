@@ -117,7 +117,7 @@ class MessageBoard(QWidget): #La class irrite de la class QWidget.
                 if item.startswith(prefix):
                     objects_to_reorder.append(item) # <--- J'ajoute l'objet a la liste des objets a reordonner.
 
-        reordered_objects = sorted(objects_to_reorder) # <--- Fonction python pour creer une nouvelle list triee.
+        reordered_objects = sorted(objects_to_reorder) # <--- Fonction python pour creer une nouvelle list triee en ordre alphabetique et croissant.
 
         for item in reversed(reordered_objects): # <--- Je parcours la liste des objets a reordonner dans l'ordre inverse pour que le dernier objet soit en haut de la liste.
             cmds.reorder(item, front=True) # <--- Maya commande pour deplacer l'objet en haut de la liste dans l'outliner.
