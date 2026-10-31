@@ -123,11 +123,6 @@ class MessageBoard(QWidget): #La class irrite de la class QWidget.
 
 
 
-
-
-
-
-
 def main():
     global widget
     try:
